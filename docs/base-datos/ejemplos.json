@@ -1,0 +1,101 @@
+{
+  "organizations": {
+    "_id": "ObjectId",
+    "name": "Servicio Técnico Centro",
+    "createdAt": "2026-09-01T10:00:00Z",
+    "active": true
+  },
+
+  "users": {
+    "_id": "ObjectId",
+    "organizationId": "ObjectId",
+    "name": "Juan Pérez",
+    "email": "juan@serviciotecnico.com",
+    "passwordHash": "...",
+    "role": "TECHNICIAN",
+    "active": true,
+    "createdAt": "2026-09-01T10:00:00Z"
+  },
+
+  "clients": {
+    "_id": "ObjectId",
+    "organizationId": "ObjectId",
+    "name": "Carlos Gómez",
+    "phone": "342-5555555",
+    "email": "carlos@email.com",
+    "createdAt": "2026-09-05T12:00:00Z",
+    "active": true
+  },
+
+  "equipment": {
+    "_id": "ObjectId",
+    "organizationId": "ObjectId",
+    "clientId": "ObjectId",
+    "type": "Notebook",
+    "brand": "Lenovo",
+    "model": "ThinkPad E14",
+    "serialNumber": "ABC123456",
+    "createdAt": "2026-09-05T12:30:00Z",
+    "active": true
+  },
+
+  "repair_orders": {
+    "_id": "ObjectId",
+    "organizationId": "ObjectId",
+    "orderNumber": "ORD-000125",
+    "clientId": "ObjectId",
+    "equipmentId": "ObjectId",
+    "assignedTechnicianId": "ObjectId",
+    "status": "IN_DIAGNOSIS",
+    "problemDescription": "El equipo no enciende",
+
+    "diagnosis": {
+      "problemDetected": "Falla en fuente de alimentación",
+      "proposedSolution": "Reemplazo de componente",
+      "observations": "Se detectaron daños en el circuito",
+      "technicianId": "ObjectId",
+      "createdAt": "2026-09-10T15:00:00Z"
+    },
+
+    "quote": {
+      "description": "Reparación de fuente",
+      "amount": 85000,
+      "status": "PENDING",
+      "createdAt": "2026-09-10T16:00:00Z"
+    },
+
+    "statusHistory": [
+      {
+        "status": "RECEIVED",
+        "changedBy": "ObjectId",
+        "changedAt": "2026-09-10T10:00:00Z",
+        "observation": "Equipo recibido"
+      },
+      {
+        "status": "IN_DIAGNOSIS",
+        "changedBy": "ObjectId",
+        "changedAt": "2026-09-10T14:00:00Z",
+        "observation": "Equipo derivado al técnico"
+      }
+    ],
+
+    "delivery": {
+      "deliveredAt": null,
+      "deliveredBy": null,
+      "observation": null
+    },
+
+    "createdAt": "2026-09-10T10:00:00Z",
+    "updatedAt": "2026-09-10T16:00:00Z"
+  },
+
+  "audit_logs": {
+    "_id": "ObjectId",
+    "organizationId": "ObjectId",
+    "userId": "ObjectId",
+    "action": "ORDER_STATUS_CHANGED",
+    "entity": "REPAIR_ORDER",
+    "entityId": "ObjectId",
+    "createdAt": "2026-09-10T16:00:00Z"
+  }
+}
