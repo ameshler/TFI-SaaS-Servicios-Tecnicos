@@ -36,7 +36,7 @@ Se utilizará una arquitectura cliente-servidor. El frontend será una aplicaci�
 
 El backend se organizará mediante una arquitectura por capas, separando responsabilidades de presentación, lógica de negocio y persistencia. La estructura conceptual será **Controller → Service → Repository → MongoDB Atlas**. Spring Security y JWT actuarán como componentes transversales para autenticación y autorización.
 
-![Figura 1. Arquitectura preliminar de la solución.](assets/segunda/figura-1-arquitectura.jpg.png)
+![Figura 1. Arquitectura preliminar de la solución.](../assets/segunda/figura-1-arquitectura.jpg.png)
 
 *Figura 1. Arquitectura preliminar de la solución.*
 
@@ -282,7 +282,7 @@ Aunque MongoDB no utiliza relaciones como una base relacional tradicional, los d
 - Equipment 1:N Repair Orders
 - User (Técnico) 1:N Repair Orders
 
-![Figura 2. Esquema conceptual de colecciones, referencias y agregado principal.](assets/segunda/figura-2-relaciones-colecciones.jpg)
+![Figura 2. Esquema conceptual de colecciones, referencias y agregado principal.](../assets/segunda/figura-2-relaciones-colecciones.jpg)
 
 *Figura 2. Esquema conceptual de colecciones, referencias y agregado principal.*
 

@@ -63,7 +63,7 @@ La propuesta parte de una ineficiencia observable y común en negocios pequeños
 
 Se desarrollará una aplicación web SaaS que permita a cada servicio técnico crear su organización y operar dentro de un espacio propio. Los usuarios autenticados accederán a funciones según su rol y todas las operaciones del negocio quedarán asociadas a su organización.
 
-![Figura 1. Separación lógica de datos entre organizaciones dentro de una misma plataforma.](assets/primera/figura-1-modelo-multiorganizacion.jpg)
+![Figura 1. Separación lógica de datos entre organizaciones dentro de una misma plataforma.](../assets/primera/figura-1-modelo-multiorganizacion.jpg)
 
 *Figura 1. Separación lógica de datos entre organizaciones dentro de una misma plataforma.*
 
@@ -110,7 +110,7 @@ Diseñar, implementar y desplegar un MVP web para la gestión integral de servic
 
 ### 6.1. Flujo de negocio principal
 
-![Figura 2. Flujo propuesto del ciclo de una orden de reparación.](assets/primera/figura-2-flujo-orden-reparacion.jpg)
+![Figura 2. Flujo propuesto del ciclo de una orden de reparación.](../assets/primera/figura-2-flujo-orden-reparacion.jpg)
 
 *Figura 2. Flujo propuesto del ciclo de una orden de reparación.*
 
@@ -144,7 +144,7 @@ MongoDB se utilizará como base NoSQL documental. La decisión se apoya en que u
 
 ### 7.2. Arquitectura preliminar
 
-![Figura 3. Arquitectura preliminar de la solución.](assets/primera/figura-3-arquitectura-preliminar.jpg)
+![Figura 3. Arquitectura preliminar de la solución.](../assets/primera/figura-3-arquitectura-preliminar.jpg)
 
 *Figura 3. Arquitectura preliminar de la solución.*
 
